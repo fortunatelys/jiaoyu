@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+    a {
+        text-decoration: none;
+    }
+}
+.gz-gr-header {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    padding: 3%;
+    background: #45bff7;
+    color: white;
+}
+
+.gz-gr-img{
+    width: 100%;
+    >img{
+        width: 100%;
+    }
+}
+
+.gz-gr-div1{
+    width:100%;
+//  background: red;
+     margin: 0 auto;
+     border-bottom: 1px solid gainsboro;
+    >div{
+        width: 30%;
+        padding: 6% 0;
+        text-align: center;
+        >p:nth-child(1){
+           text-align: center;
+            line-height: 55px;
+            width: 60px;
+            background: #45bff7;
+            height:60%;
+            margin-left: 30%;
+            
+            border-radius: 50%;
+            .fa-3x{
+               font-size: 2.5rem;
+            }
+          
+        }
+        
+        >p:nth-child(2)
+        {
+            font-size: 1.5rem;
+            color: gray;
+            padding-top: 2%;
+        }
+       margin: 0 auto;
+    }
+}
+
+
+
+.gz-gr-div {
+    width: 100%;
+    display: flex;
+    padding: 4% 0;
+    border-bottom: 1px solid gainsboro;
+    >p:nth-child(1) {
+        font-size: 1.6rem;
+        border-right: 1px solid gainsboro;
+        padding-left: 3%;
+        margin-left: 3%;
+        width: 21%;
+        text-align: center;
+    }
+    >p:nth-child(2) {
+        color: #A9A9A9;
+        font-size: 1.4rem;
+        padding-left: 3%;
+        width: 60%;
+    }
+    >p:nth-child(3) {
+        width: 10%;
+        font-size: 1.4rem;
+        color:#A9A9A9;
+    }
+}
+
+.gz-gr-btn {
+    width: 90%;
+    margin: 6% 4%;
+    text-align: center;
+    padding: 3% 0;
+    border: 1px solid white;
+    color: white;
+    background: #00A7EE;
+    font-size: 2rem;
+    a{
+        color: white;
+    }
+}
+
+
+.gz-gr-div2 {
+    width: 100%;
+    display: flex;
+    padding: 4% 0;
+    border-bottom: 1px solid gainsboro;
+    >p:nth-child(1) {
+        font-size: 1.6rem;
+        border-right: 1px solid gainsboro;
+        padding-left: 3%;
+        margin-left: 3%;
+        width: 34%;
+        text-align: center;
+    }
+    >p:nth-child(2) {
+        color: #A9A9A9;
+        font-size: 1.4rem;
+        padding-left: 3%;
+        width: 55%;
+    }
+    >p:nth-child(3) {
+        width: 10%;
+        font-size: 1.4rem;
+        color: #A9A9A9;
+    }
+}

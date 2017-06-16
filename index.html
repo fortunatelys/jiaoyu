@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script src="js/jquery.3.1.1.js"></script>
+		<script src="js/angular-1.4.6.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+
+		<link rel="stylesheet" href="css/FortAwesome/css/font-awesome.css">
+		<link rel="stylesheet" href="css/new.css">
+		<link rel="stylesheet" href="css/shouye.css">
+		<link rel="stylesheet" href="css/zixunbangzhu.css">
+		<link rel="stylesheet" href="css/zizhuruxue.css">
+		<link rel="stylesheet" href="css/gerenzhongxin.css">
+	</head>
+
+	<body>
+		<ng-view></ng-view>
+		<div style="padding: 3% 0;"></div>
+		<footer>
+			<ul>
+				<li>
+					<a href="#shouye">
+						<i class="fa fa-envelope-open fa-2x" aria-hidden="true" style="margin-bottom: 15%;"></i>
+
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zizhu">
+						<i class="fa fa-window-maximize fa-2x" aria-hidden="true"></i>
+						<p>自助入学</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zixun">
+						<i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+						<p>咨询帮助</p>
+					</a>
+				</li>
+				<li>
+					<a href="#zhongxin">
+						<i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+						<p>个人中心</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	<script>
+		var app = angular.module("myApp", ['ngRoute'])
+		app.config(function($routeProvider, $locationProvider) {
+			$locationProvider.hashPrefix('')
+			$routeProvider
+				.when("/shouye", {
+					templateUrl: "./page/shouye.html"
+						//                    template:"123"
+
+				})
+				.when("/zizhu", {
+					templateUrl: "./page/zizhuruxue.html"
+						//                    template:"456"
+				})
+				.when("/zixun", {
+					templateUrl: "./page/zixunbangzhu.html"
+						//                    template:"456"
+				})
+				.when("/zhongxin", {
+					templateUrl: "page/gerenzhongxin.html"
+						//                    template:"456"
+				})
+				.otherwise({
+					redirectTo: "/shouye"
+				})
+		})
+	</script>
+
+</html>
